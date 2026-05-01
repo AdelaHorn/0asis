@@ -757,6 +757,112 @@
   .footer-logo span { color: var(--green); }
   .footer-copy { font-size: 12px; color: var(--dim); font-family: var(--mono); letter-spacing: 0.04em; }
 
+  /* ── MOBILE RESPONSIVENESS ────────────── */
+  @media (max-width: 768px) {
+    html, body { overflow-x: hidden; }
+
+    nav {
+      padding: 16px 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-links {
+      display: none;
+    }
+
+    #hero { padding: 100px 20px 60px; }
+    .hero-sub { font-size: 16px; }
+    .hero-ctas { flex-direction: column; }
+
+    section { padding: 80px 20px; }
+    #stats { padding: 60px 20px; }
+    #diagram { padding: 60px 20px; }
+    #cta { padding: 80px 20px; }
+
+    .stats-row {
+      grid-template-columns: 1fr;
+    }
+    .stat-block {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+      padding: 36px 24px;
+    }
+    .stat-block:last-child { border-bottom: none; }
+
+    .problem-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .steps-grid,
+    .steps-row-2 {
+      grid-template-columns: 1fr;
+    }
+    .step-card {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+    }
+    .step-card:last-child { border-bottom: none; }
+
+    .approach-layout {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .diff-grid {
+      grid-template-columns: 1fr;
+    }
+    .diff-card {
+      border-right: none !important;
+      border-bottom: 1px solid var(--border) !important;
+    }
+    .diff-card:last-child { border-bottom: none !important; }
+
+    .impact-grid {
+      grid-template-columns: 1fr;
+    }
+    .impact-card {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+    }
+    .impact-card:last-child { border-bottom: none; }
+
+    .belgrade-layout {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .comp-header,
+    .comp-row {
+      grid-template-columns: 100px 1fr 1fr 1fr;
+    }
+    .comp-cell, .comp-col-header {
+      padding: 12px 10px;
+      font-size: 11px;
+    }
+
+    .model-flow {
+      flex-direction: column;
+    }
+    .model-arrow { display: none; }
+
+    .cta-inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    footer {
+      flex-direction: column;
+      gap: 12px;
+      padding: 36px 20px;
+      text-align: center;
+    }
+
+    .diagram-container { margin-top: 40px; }
+    .diagram-img { min-width: 0; }
+  }
+
   /* ── SCROLL REVEAL ───────────────────── */
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.visible { opacity: 1; transform: none; }
@@ -776,7 +882,7 @@
     <li><a href="#differentiators">Why 0asis</a></li>
     <li><a href="#belgrade">Field Proof</a></li>
     <li><a href="#cta">Partner</a></li>
-    <li><a href="#cta" class="nav-cta">Partner with us</a></li>
+
   </ul>
 </nav>
 
@@ -825,7 +931,7 @@
           <div class="stat-desc">Carbon removal infrastructure currently deployed inside city boundaries. Existing solutions are industrial, remote, or expensive.</div>
         </div>
         <div class="problem-stat">
-          <div class="stat-num">$<em>1k</em>+</div>
+          <div class="stat-num">$<em>1k+</em></div>
           <div class="stat-desc">Per tonne for Direct Air Capture — too expensive to deploy at meaningful urban scale, and requires dedicated remote facilities.</div>
         </div>
       </div>
