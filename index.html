@@ -1,14 +1,1193 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Claude Design</title>
-    <link rel="icon" type="image/png" href="/design/favicon.png" />
-    <script type="module" crossorigin src="/design/assets/index-CksJ9HVa.js"></script>
-    <link rel="stylesheet" crossorigin href="/design/assets/index-BadHA-b0.css">
-  </head>
-  <body>
-    <script>window.__OMELETTE_ME__={"accountUuid":"a45d3e5d-d887-4f21-906f-1d990bdea6a8","organizationUuid":"46286855-0890-4877-84ad-ee37deb2338c","email":"adela.b.s.horn05@gmail.com","displayName":"Adela","orgName":"adela.b.s.horn05@gmail.com's Organization","growthbookPayload":"{\"features\":{\"1151655319\":{\"defaultValue\":true},\"1222900192\":{\"defaultValue\":false},\"1677779734\":{\"defaultValue\":false},\"183041011\":{\"defaultValue\":false},\"1964418062\":{\"defaultValue\":false},\"2245129288\":{\"defaultValue\":\"Claude Code\"},\"2302448402\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mo99y32k\"}]},\"2334228495\":{\"defaultValue\":\"https://docs.google.com/forms/d/e/1FAIpQLSdgWPS7t2HVJIDDEjJq_xzZstXpM9fCrYi_mfmi9OYHofQe2g/viewform?usp=header\",\"rules\":[{\"force\":\"https://docs.google.com/forms/d/e/1FAIpQLSdgWPS7t2HVJIDDEjJq_xzZstXpM9fCrYi_mfmi9OYHofQe2g/viewform?usp=header\",\"id\":\"fr_mnwalz96\"}]},\"2340390567\":{\"defaultValue\":false},\"2352858198\":{\"defaultValue\":false},\"2420051580\":{\"defaultValue\":false},\"2639792692\":{\"defaultValue\":true},\"3003949306\":{\"defaultValue\":true},\"3031787898\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mo99sjpg\"}]},\"306213466\":{\"defaultValue\":false},\"3070976585\":{\"defaultValue\":false},\"3259014779\":{\"defaultValue\":\"low\"},\"3290303989\":{\"defaultValue\":\"Claude Design\"},\"3341496598\":{\"defaultValue\":true},\"3423339596\":{\"defaultValue\":false,\"rules\":[{\"force\":false,\"id\":\"fr_3smt4nmngjlnbj\"}]},\"3500364403\":{\"defaultValue\":false},\"3803514950\":{\"defaultValue\":false},\"3855458502\":{\"defaultValue\":false},\"3931689764\":{\"defaultValue\":false},\"3950229376\":{\"defaultValue\":true},\"4158685222\":{\"defaultValue\":false},\"4292285061\":{\"defaultValue\":false},\"657312184\":{\"defaultValue\":false},\"664173016\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_1h4b0onmnaw2adf\"}]},\"66949239\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mo649sv4\"}]},\"693066665\":{\"defaultValue\":false},\"699712690\":{\"defaultValue\":false}},\"hashing_algorithm\":\"djb2\"}","modelPresets":[{"id":"claude-haiku-4-5-20251001","label":"Claude Haiku 4.5","maxTokens":200000,"description":"Fastest for quick answers"},{"id":"claude-opus-4-7","label":"Claude Opus 4.7","maxTokens":200000,"description":"Most capable for ambitious work"},{"id":"claude-sonnet-4-6","label":"Claude Sonnet 4.6","maxTokens":1000000,"description":"Most efficient for everyday tasks"},{"id":"claude-3-opus-20240229","label":"Claude Opus 3","maxTokens":200000,"overflow":true},{"id":"claude-opus-4-6","label":"Claude Opus 4.6","maxTokens":1000000,"supportsAdaptiveThinking":true,"description":" ","overflow":true},{"id":"claude-sonnet-4-5-20250929","label":"Claude Sonnet 4.5","maxTokens":200000,"overflow":true}],"defaultModelId":"claude-sonnet-4-6","overrideStickyModel":true,"isPersonalOrg":true}</script><div id="root"></div>
-  </body>
+<head>
+<style data-omelette-injected>html,body{background:transparent}</style><script data-omelette-injected>(()=>{var j=["https://claude.ai","https://preview.claude.ai","https://eap-omelette.claude.ai"];var x=true;var S=30000;var f=3000;document.addEventListener("DOMContentLoaded",()=>{const H=window.Babel;const G="om-src-id";if(H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[G])){H.registerPlugin(G,({types:Y})=>({visitor:{JSXOpeningElement(U,Q){const J=U.node;if(J.name&&J.name.type==="JSXMemberExpression")return;for(let V=0;V<J.attributes.length;V++){const L=J.attributes[V];if(L.type==="JSXAttribute"&&L.name&&L.name.name==="data-om-id")return}const W=Q.file&&Q.file.opts&&Q.file.opts.filename||"?";const Z=J.loc&&J.loc.start;const z=`jsx:${W}:${J.start??0}:${Z?Z.line:0}:${Z?Z.column+1:0}`;J.attributes.push(Y.jsxAttribute(Y.jsxIdentifier("data-om-id"),Y.stringLiteral(z)))}}}))}const k="om-text-extract";let A=false;if(x&&H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[k])){const Y=window.React;if(Y&&Y.useSyncExternalStore&&Y.createElement){A=true;const U={};const Q=new Set;let J=0;window.__omTextO=U;window.__omTextSet=(z)=>{for(const V in z){const L=z[V];if(L==null)delete U[V];else U[V]=L}J++;Q.forEach((V)=>V())};const W=(z)=>{Q.add(z);return()=>Q.delete(z)};const Z=()=>J;window.__OmT=function z(V){Y.useSyncExternalStore(W,Z,Z);return Y.createElement("span",{"data-om-text":V.i,className:"__om-t"},V.i in U?U[V.i]:V.children)};H.registerPlugin(k,({types:z})=>{const V={style:1,script:1,noscript:1,textarea:1,title:1,option:1,text:1,tspan:1,textPath:1};const L={placeholder:1,alt:1,title:1,label:1,"aria-label":1,"aria-description":1,"aria-placeholder":1};const _=($,C)=>z.logicalExpression("??",z.memberExpression(z.logicalExpression("||",z.memberExpression(z.identifier("window"),z.identifier("__omTextO")),z.objectExpression([])),z.stringLiteral($),true),C);const E=($)=>$.file&&$.file.opts&&$.file.opts.filename||"?";const B=($)=>$.file&&$.file.code||"";const b=($,C)=>{const X=(F)=>F&&F.start!=null&&F.end!=null&&(F.type==="StringLiteral"||F.type==="TemplateLiteral"&&F.expressions.length===0)?[F.start,F.end]:null;const N=X(C);if(N)return N;if(C&&C.type==="Identifier"){const F=$.scope.getBinding(C.name);if(F&&F.constant&&F.path.node.type==="VariableDeclarator"){return X(F.path.node.init)}}return null};const m=($,C,X)=>{const N=$.node;let F=false;const w=(K,q)=>{F=true;return z.jsxElement(z.jsxOpeningElement(z.jsxIdentifier("__OmT"),[z.jsxAttribute(z.jsxIdentifier("i"),z.stringLiteral(K))],false),z.jsxClosingElement(z.jsxIdentifier("__OmT")),[q],false)};const D=N.children.map((K)=>{if(K.type==="JSXText"){if(K.start==null||K.end==null)return K;const q=X.slice(K.start,K.end);const M=q.length-q.trimStart().length;const R=q.length-q.trimEnd().length;if(M+R>=q.length)return K;return w(`txt:${C}:${K.start+M}:${K.end-R}`,K)}if(K.type==="JSXExpressionContainer"){const q=b($,K.expression);if(q)return w(`str:${C}:${q[0]}:${q[1]}`,K)}return K});if(F)N.children=D};return{visitor:{JSXOpeningElement($,C){const X=$.node;const N=E(C);const F={};for(let w=0;w<X.attributes.length;w++){const D=X.attributes[w];if(D.type!=="JSXAttribute"||!D.name)continue;const K=D.name.name;if(!L[K])continue;if(!D.value||D.value.type!=="StringLiteral")continue;if(D.value.start==null||D.value.end==null)continue;const q=`txt:${N}:${D.value.start}:${D.value.end}`;F[K]=q;D.value=z.jsxExpressionContainer(_(q,z.stringLiteral(D.value.value)))}if(Object.keys(F).length){X.attributes.push(z.jsxAttribute(z.jsxIdentifier("data-om-text-attrs"),z.stringLiteral(JSON.stringify(F))))}},JSXElement($,C){const X=$.node.openingElement;const N=X&&X.name&&X.name.name;if(N==="__OmT")return;if(typeof N==="string"&&V[N])return;m($,E(C),B(C))},JSXFragment($,C){m($,E(C),B(C))}}}})}}const u=A?["transform-react-jsx-source",G,k]:["transform-react-jsx-source",G];document.querySelectorAll('script[type="text/babel"],script[type="text/jsx"]').forEach((Y,U)=>{const Q=Y.getAttribute("data-plugins")||"";const J=u.filter((W)=>Q.indexOf(W)<0);if(J.length){Y.setAttribute("data-plugins",Q?`${Q},${J.join(",")}`:J.join(","))}if(!Y.hasAttribute("data-filename")){Y.setAttribute("data-filename",Y.getAttribute("src")||`inline-${U}`)}})});var y=window.parent;if(y&&y!==window){const H=(Q,J)=>{try{y.postMessage({__omelette_log:true,type:Q,data:J},"*")}catch{}};["log","warn","error"].forEach((Q)=>{const J=console[Q];console[Q]=(...W)=>{const Z=W.map((z)=>{try{return typeof z==="object"?JSON.stringify(z):String(z)}catch{try{return String(z)}catch{return"[unstringifiable]"}}}).join(" ");H(Q,Z);J.apply(console,W)}});window.addEventListener("error",(Q)=>{const J=Q.target;if(J&&J!==window&&J.tagName){const W=J.src||J.href||"";H("resource_error",`${J.tagName} failed to load: ${W}`)}else{H("error",`${Q.message||"Unknown error"} at ${Q.filename||"?"}:${Q.lineno||0}:${Q.colno||0}`)}},true);window.addEventListener("unhandledrejection",(Q)=>{const J=Q.reason;const W=J instanceof Error?`${J.message} ${J.stack}`:String(J);H("error",`Unhandled rejection: ${W}`)});const G=()=>{try{y.postMessage({type:"omelette:height",height:document.documentElement.scrollHeight},"*")}catch{}};if(document.readyState==="complete")G();else window.addEventListener("load",G);if(window.ResizeObserver)new ResizeObserver(G).observe(document.documentElement);const k={};let A=0;window.claude={complete(Q){return new Promise((J,W)=>{if(!j.length){W(new Error("claude.complete: no parent origin"));return}const Z=`c${++A}`;const z=()=>setTimeout(()=>{delete k[Z];W(new Error(`claude.complete: no data for ${S/1000}s`))},S);const V=z();k[Z]={resolve:J,reject:W,text:"",t:V,arm:z};try{for(const L of j){y.postMessage({__om_api:true,id:Z,body:Q},L)}}catch(L){clearTimeout(V);delete k[Z];W(L)}})}};const u={};let Y=0;window.omelette={writeFile:(Q,J)=>new Promise((W,Z)=>{if(!j.length){W();return}const z=`f${++Y}`;const V=setTimeout(()=>{delete u[z];W()},f);u[z]={resolve:W,reject:Z,t:V};try{for(const L of j){y.postMessage({__om_file:true,id:z,op:"write",path:Q,content:J},L)}}catch{clearTimeout(V);delete u[z];W()}})};const U=(Q)=>{try{return JSON.stringify(Q)}catch{return JSON.stringify(String(Q))}};window.addEventListener("message",(Q)=>{if(j.indexOf(Q.origin)<0)return;if(Q.source!==y)return;const J=Q.data;if(!J)return;if(J.__om_file_r){const z=u[J.id];if(!z)return;clearTimeout(z.t);delete u[J.id];if(J.ok)z.resolve();else z.reject(new Error(J.error||"write failed"));return}if(J.__om_api_r){const z=k[J.id];if(!z)return;if(J.error!=null){clearTimeout(z.t);delete k[J.id];z.reject(new Error(J.error));return}if(J.chunk!=null){clearTimeout(z.t);z.t=z.arm();z.text+=J.chunk;return}if(J.done){clearTimeout(z.t);delete k[J.id];z.resolve(J.text!=null?J.text:z.text);return}return}if(!J.__om_eval)return;const W=J;const Z=(z)=>{Q.source.postMessage({...z,__om_eval_r:1,id:W.id},Q.origin)};try{const z=(0,eval)(W.code);if(z&&typeof z.then==="function"){z.then((V)=>Z({ok:1,v:U(V)}),(V)=>Z({ok:0,e:String(V)}))}else{Z({ok:1,v:U(z)})}}catch(z){Z({ok:0,e:String(z)})}})}})();
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>0asis — Urban Carbon Removal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<template id="__bundler_thumbnail" data-bg-color="#0B0F0E">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <!-- bg -->
+    <rect width="1200" height="800" fill="#0B0F0E"/>
+    <!-- logo mark -->
+    <text x="600" y="340" text-anchor="middle" font-family="monospace" font-size="120" font-weight="600" fill="#E8F1EC"><tspan fill="#3FAF7D">0</tspan>asis</text>
+    <!-- tagline -->
+    <text x="600" y="420" text-anchor="middle" font-family="monospace" font-size="28" fill="#3FAF7D" letter-spacing="8">THE CARBON LOOP, CLOSED.</text>
+    <!-- decorative line -->
+    <line x1="480" y1="460" x2="720" y2="460" stroke="#3FAF7D" stroke-width="1" stroke-opacity="0.4"/>
+    <!-- three dots representing stats -->
+    <circle cx="520" cy="510" r="6" fill="#3FAF7D" fill-opacity="0.6"/>
+    <circle cx="600" cy="510" r="6" fill="#3FAF7D" fill-opacity="0.6"/>
+    <circle cx="680" cy="510" r="6" fill="#3FAF7D" fill-opacity="0.6"/>
+  </svg>
+</template>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:    #0B0F0E;
+    --bg1:   #0f1412;
+    --bg2:   #131a17;
+    --text:  #E8F1EC;
+    --dim:   #7A8A84;
+    --green: #3FAF7D;
+    --border: rgba(63,175,125,0.15);
+    --sans:  'DM Sans', sans-serif;
+    --mono:  'DM Mono', monospace;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ─────────────────────────────── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: linear-gradient(to bottom, rgba(11,15,14,0.95), transparent);
+    backdrop-filter: blur(8px);
+  }
+  .nav-logo {
+    font-family: var(--mono);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--green); }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a {
+    color: var(--dim);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--text); }
+  .nav-cta {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green) !important;
+    border: 1px solid rgba(63,175,125,0.4);
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: rgba(63,175,125,0.1) !important; }
+
+  /* ── HERO ────────────────────────────── */
+  #hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 140px 60px 80px;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('hero.png');
+    background-size: cover;
+    background-position: center 30%;
+    z-index: 0;
+    filter: brightness(0.72) saturate(0.9);
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      rgba(11,15,14,0.82) 0%,
+      rgba(11,15,14,0.55) 55%,
+      rgba(11,15,14,0.30) 100%
+    );
+    z-index: 1;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+  }
+  .hero-tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-tag::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: var(--green);
+  }
+  h1 {
+    font-size: clamp(42px, 5vw, 70px);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 24px;
+  }
+  .hero-sub {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(232,241,236,0.85);
+    line-height: 1.65;
+    max-width: 520px;
+    margin-bottom: 48px;
+  }
+  .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn-primary {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--green);
+    color: var(--bg);
+    border: none;
+    padding: 14px 32px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s, transform 0.2s;
+    display: inline-block;
+  }
+  .btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+  .btn-secondary {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid rgba(232,241,236,0.3);
+    padding: 14px 32px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+    display: inline-block;
+  }
+  .btn-secondary:hover { border-color: rgba(232,241,236,0.6); transform: translateY(-1px); }
+
+  /* ── SHARED SECTION ──────────────────── */
+  section { padding: 120px 60px; }
+  .section-inner { max-width: 1080px; margin: 0 auto; }
+  .section-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--dim);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-tag::before { content: attr(data-num); color: var(--green); font-size: 10px; }
+  h2 {
+    font-size: clamp(30px, 3.5vw, 48px);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
+    color: var(--text);
+    margin-bottom: 20px;
+  }
+  .section-body {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--dim);
+    line-height: 1.7;
+    max-width: 520px;
+  }
+
+  /* ── STATS ───────────────────────────── */
+  #stats { background: var(--bg1); padding: 80px 60px; }
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid var(--border);
+  }
+  .stat-block {
+    padding: 52px 48px;
+    border-right: 1px solid var(--border);
+    position: relative;
+  }
+  .stat-block:last-child { border-right: none; }
+  .stat-block-num {
+    font-family: var(--mono);
+    font-size: clamp(48px, 5vw, 72px);
+    font-weight: 300;
+    color: var(--text);
+    letter-spacing: -0.04em;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .stat-block-num em { font-style: normal; color: var(--green); }
+  .stat-block-label {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--dim);
+    line-height: 1.55;
+    max-width: 220px;
+  }
+  .stat-block-label strong { color: var(--text); font-weight: 400; }
+
+  /* ── PROBLEM ─────────────────────────── */
+  #problem { background: var(--bg); }
+  .problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    margin-top: 60px;
+  }
+  .problem-stat {
+    border-left: 2px solid var(--border);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+  }
+  .stat-num {
+    font-family: var(--mono);
+    font-size: 42px;
+    font-weight: 300;
+    color: var(--text);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-num em { font-style: normal; color: var(--green); }
+  .stat-desc { font-size: 14px; color: var(--dim); line-height: 1.6; }
+  .problem-points { display: flex; flex-direction: column; gap: 28px; }
+  .problem-point { display: flex; gap: 16px; align-items: flex-start; }
+  .point-dot {
+    width: 6px; height: 6px;
+    background: var(--green);
+    border-radius: 50%;
+    margin-top: 8px;
+    flex-shrink: 0;
+  }
+  .point-text { font-size: 15px; color: var(--dim); line-height: 1.65; }
+
+  /* ── SOLUTION (HOW IT WORKS) ─────────── */
+  #solution { background: var(--bg1); }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 60px;
+    border: 1px solid var(--border);
+  }
+  .steps-row-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid var(--border);
+    border-top: none;
+  }
+  .step-card {
+    padding: 36px 28px;
+    border-right: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+  }
+  .step-card:last-child { border-right: none; }
+  .step-card:hover { background: rgba(63,175,125,0.04); }
+  .step-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--dim);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .step-icon { width: 72px; height: 72px; margin-bottom: 20px; }
+  .step-name {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+  .step-desc { font-size: 13px; color: var(--dim); line-height: 1.65; }
+
+  /* ── APPROACH (kept for diagram) ─────── */
+  #approach { background: var(--bg2); }
+  .approach-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .approach-visual {
+    position: relative;
+    height: 320px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    background: rgba(63,175,125,0.03);
+  }
+  .approach-caption {
+    position: absolute;
+    bottom: 16px; left: 16px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--dim);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .approach-text h3 {
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+    line-height: 1.35;
+  }
+  .approach-text p {
+    font-size: 15px;
+    color: var(--dim);
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+  .spec-list { display: flex; flex-direction: column; gap: 0; margin-top: 28px; }
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .spec-key { font-family: var(--mono); color: var(--dim); letter-spacing: 0.04em; }
+  .spec-val { color: var(--green); font-family: var(--mono); font-size: 12px; }
+
+  /* ── DIFFERENTIATORS ─────────────────── */
+  #differentiators { background: var(--bg); }
+  .diff-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-top: 60px;
+    border: 1px solid var(--border);
+  }
+  .diff-card {
+    padding: 44px 40px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.3s;
+  }
+  .diff-card:nth-child(2n) { border-right: none; }
+  .diff-card:nth-child(3),
+  .diff-card:nth-child(4) { border-bottom: none; }
+  .diff-card:hover { background: rgba(63,175,125,0.03); }
+  .diff-icon {
+    width: 36px; height: 36px;
+    margin-bottom: 24px;
+  }
+  .diff-title {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+    line-height: 1.25;
+  }
+  .diff-body {
+    font-size: 14px;
+    color: var(--dim);
+    line-height: 1.65;
+  }
+
+  /* ── VISION ──────────────────────────── */
+  #vision { background: var(--bg1); padding: 140px 60px; text-align: center; }
+  #vision h2 {
+    font-size: clamp(40px, 5vw, 68px);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    max-width: 700px;
+    margin: 0 auto 28px;
+  }
+  #vision h2 em { font-style: normal; color: var(--green); }
+  #vision p {
+    font-size: 17px;
+    color: var(--dim);
+    max-width: 520px;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  /* ── IMPACT ──────────────────────────── */
+  #impact { background: var(--bg2); }
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 60px;
+    border: 1px solid var(--border);
+  }
+  .impact-card {
+    padding: 44px 36px;
+    border-right: 1px solid var(--border);
+  }
+  .impact-card:last-child { border-right: none; }
+  .impact-num {
+    font-family: var(--mono);
+    font-size: clamp(32px, 3.5vw, 48px);
+    font-weight: 300;
+    color: var(--green);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .impact-label {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .impact-source {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--dim);
+    letter-spacing: 0.04em;
+    line-height: 1.55;
+  }
+
+  /* ── BELGRADE ────────────────────────── */
+  #belgrade { background: var(--bg1); }
+  .belgrade-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    margin-top: 60px;
+  }
+  .belgrade-left {}
+  .belgrade-lead {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--dim);
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  .belgrade-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--border);
+  }
+  .belgrade-spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .belgrade-spec-row:last-child { border-bottom: none; }
+  .belgrade-spec-key { font-family: var(--mono); color: var(--dim); letter-spacing: 0.04em; font-size: 11px; }
+  .belgrade-spec-val { color: var(--text); font-family: var(--mono); font-size: 12px; }
+  .belgrade-right {}
+  .belgrade-finding {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .belgrade-finding:last-child { border-bottom: none; }
+  .finding-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--green);
+    letter-spacing: 0.08em;
+    flex-shrink: 0;
+    padding-top: 3px;
+  }
+  .finding-text {
+    font-size: 15px;
+    color: var(--dim);
+    line-height: 1.65;
+  }
+  .finding-text strong { color: var(--text); font-weight: 500; }
+
+  /* ── DIAGRAM ─────────────────────────── */
+  #diagram { background: var(--bg); padding: 100px 60px; }
+  .diagram-container {
+    max-width: 1080px;
+    margin: 60px auto 0;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .diagram-header {
+    background: rgba(63,175,125,0.06);
+    padding: 16px 28px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .diagram-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+  }
+  .diagram-sub {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--dim);
+    letter-spacing: 0.06em;
+  }
+  .diagram-img {
+    display: block;
+    width: 100%;
+    filter: brightness(1.08) saturate(0.95);
+  }
+
+  /* ── WHY DIFFERENT ───────────────────── */
+  #why-different { background: var(--bg2); }
+  .comparison-table {
+    margin-top: 60px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .comp-header {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    background: rgba(63,175,125,0.05);
+    border-bottom: 1px solid var(--border);
+  }
+  .comp-col-header {
+    padding: 18px 24px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-right: 1px solid var(--border);
+    color: var(--dim);
+  }
+  .comp-col-header:last-child { border-right: none; }
+  .comp-col-header.hl { color: var(--green); }
+  .comp-row {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    border-bottom: 1px solid var(--border);
+  }
+  .comp-row:last-child { border-bottom: none; }
+  .comp-cell {
+    padding: 18px 24px;
+    font-size: 13px;
+    border-right: 1px solid var(--border);
+    color: var(--dim);
+    line-height: 1.5;
+  }
+  .comp-cell:last-child { border-right: none; }
+  .comp-cell.label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; }
+  .comp-cell.good { color: var(--green); }
+  .comp-cell.bad  { color: #c07a5a; }
+  .comp-cell.hl-col { background: rgba(63,175,125,0.04); }
+
+  /* ── CTA ─────────────────────────────── */
+  #cta { background: var(--bg1); padding: 140px 60px; }
+  .cta-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .cta-left h2 {
+    font-size: clamp(34px, 4vw, 54px);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .cta-left p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--dim);
+    line-height: 1.7;
+    max-width: 440px;
+  }
+  .cta-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .cta-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .cta-field label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--dim);
+  }
+  .cta-field input,
+  .cta-field textarea,
+  .cta-field select {
+    background: rgba(63,175,125,0.04);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 14px;
+    padding: 12px 16px;
+    border-radius: 2px;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.2s;
+    appearance: none;
+  }
+  .cta-field input:focus,
+  .cta-field textarea:focus,
+  .cta-field select:focus { border-color: rgba(63,175,125,0.5); }
+  .cta-field textarea { resize: vertical; min-height: 90px; }
+  .cta-field select option { background: #0f1412; }
+  .cta-submit {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--green);
+    color: var(--bg);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.2s, transform 0.2s;
+    align-self: flex-start;
+    margin-top: 4px;
+  }
+  .cta-submit:hover { opacity: 0.85; transform: translateY(-1px); }
+
+  /* ── BUSINESS MODEL ──────────────────── */
+  #business { background: var(--bg2); }
+  .model-flow {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin-top: 60px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+  }
+  .model-node {
+    flex: 1;
+    min-width: 180px;
+    padding: 32px 24px;
+    border: 1px solid var(--border);
+    text-align: center;
+    background: rgba(63,175,125,0.02);
+    transition: background 0.2s;
+  }
+  .model-node:hover { background: rgba(63,175,125,0.06); }
+  .model-node-icon { width: 40px; height: 40px; margin: 0 auto 16px; }
+  .model-node-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--dim);
+    margin-bottom: 8px;
+  }
+  .model-node-title { font-size: 15px; font-weight: 500; color: var(--text); margin-bottom: 8px; line-height: 1.3; }
+  .model-node-desc  { font-size: 12px; color: var(--dim); line-height: 1.55; }
+  .model-arrow {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+  }
+
+  /* ── FOOTER ──────────────────────────── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 48px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-logo { font-family: var(--mono); font-size: 16px; font-weight: 500; color: var(--text); }
+  .footer-logo span { color: var(--green); }
+  .footer-copy { font-size: 12px; color: var(--dim); font-family: var(--mono); letter-spacing: 0.04em; }
+
+  /* ── SCROLL REVEAL ───────────────────── */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+</style>
+</head>
+<body>
+
+<!-- 1. NAV -->
+<nav>
+  <a href="#" class="nav-logo"><span>0</span>asis</a>
+  <ul class="nav-links">
+    <li><a href="#solution">System</a></li>
+    <li><a href="#differentiators">Why 0asis</a></li>
+    <li><a href="#belgrade">Field Proof</a></li>
+    <li><a href="#cta">Partner</a></li>
+    <li><a href="#cta" class="nav-cta">Partner with us</a></li>
+  </ul>
+</nav>
+
+<!-- 2. HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Algae Sensing Intelligence System</div>
+    <h1>The carbon loop,<br>closed.</h1>
+    <p class="hero-sub">Algae-powered photobioreactor units deployed in urban parks and public spaces — capturing CO₂ and converting it to hydrochar. Durable, measurable, urban.</p>
+    <div class="hero-ctas">
+      <a href="#solution" class="btn-primary">See how it works</a>
+      <a href="#cta" class="btn-secondary">Partner with us</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. STATS -->
+<section id="stats">
+  <div class="stats-row">
+    <div class="stat-block reveal">
+      <div class="stat-block-num">~50<em>×</em></div>
+      <div class="stat-block-label"><strong>More efficient</strong> than terrestrial plants per unit area — using the same sunlight and CO₂</div>
+    </div>
+    <div class="stat-block reveal reveal-delay-1">
+      <div class="stat-block-num">100<em>yr+</em></div>
+      <div class="stat-block-label"><strong>Carbon stable</strong> as hydrochar — centuries to millennia versus decades for tree-based storage</div>
+    </div>
+    <div class="stat-block reveal reveal-delay-2">
+      <div class="stat-block-num">75<em>%</em></div>
+      <div class="stat-block-label"><strong>Of all CO₂ emissions</strong> originate from cities — where 0asis units are designed to deploy</div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PROBLEM -->
+<section id="problem">
+  <div class="section-inner">
+    <div class="section-tag" data-num="02 —">The Problem</div>
+    <h2>The air is an emergency.<br>The infrastructure<br>isn't keeping up.</h2>
+    <div class="problem-grid">
+      <div class="reveal">
+        <div class="problem-stat">
+          <div class="stat-num">~<em>0</em></div>
+          <div class="stat-desc">Carbon removal infrastructure currently deployed inside city boundaries. Existing solutions are industrial, remote, or expensive.</div>
+        </div>
+        <div class="problem-stat">
+          <div class="stat-num">$<em>1k</em>+</div>
+          <div class="stat-desc">Per tonne for Direct Air Capture — too expensive to deploy at meaningful urban scale, and requires dedicated remote facilities.</div>
+        </div>
+      </div>
+      <div class="problem-points reveal reveal-delay-2">
+        <div class="problem-point">
+          <div class="point-dot"></div>
+          <div class="point-text">Direct Air Capture is energy-intensive and requires dedicated facilities far from emission sources.</div>
+        </div>
+        <div class="problem-point">
+          <div class="point-dot"></div>
+          <div class="point-text">Tree planting stores carbon temporarily and reversibly — forests burn, die, and release what they captured.</div>
+        </div>
+        <div class="problem-point">
+          <div class="point-dot"></div>
+          <div class="point-text">Urban parks and public spaces represent untapped infrastructure for biological carbon capture — visited by millions daily.</div>
+        </div>
+        <div class="problem-point">
+          <div class="point-dot"></div>
+          <div class="point-text">Carbon credit buyers — especially AI companies with massive compute emissions — need measurable, durable removal they can verify.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="solution">
+  <div class="section-inner">
+    <div class="section-tag" data-num="03 —">The Solution</div>
+    <h2>One closed loop,<br>six steps.</h2>
+    <div class="steps-grid">
+
+      <!-- Step 1 -->
+      <div class="step-card reveal">
+        <div class="step-num">Step 01</div>
+        <svg class="step-icon" viewBox="0 0 72 72" fill="none">
+          <rect x="1" y="1" width="70" height="70" rx="2" stroke="rgba(63,175,125,0.2)" stroke-width="1"/>
+          <rect x="12" y="12" width="28" height="38" rx="2" stroke="#3FAF7D" stroke-width="1.5" fill="rgba(63,175,125,0.06)"/>
+          <line x1="12" y1="22" x2="40" y2="22" stroke="#3FAF7D" stroke-width="0.8" stroke-opacity="0.5"/>
+          <line x1="12" y1="30" x2="40" y2="30" stroke="#3FAF7D" stroke-width="0.8" stroke-opacity="0.5"/>
+          <line x1="12" y1="38" x2="40" y2="38" stroke="#3FAF7D" stroke-width="0.8" stroke-opacity="0.5"/>
+          <line x1="12" y1="46" x2="40" y2="46" stroke="#3FAF7D" stroke-width="0.8" stroke-opacity="0.5"/>
+          <path d="M47 24 L55 24" stroke="#3FAF7D" stroke-width="1.5" marker-end="url(#s1)"/>
+          <path d="M47 31 L55 31" stroke="#3FAF7D" stroke-width="1.5" marker-end="url(#s1)"/>
+          <path d="M47 38 L55 38" stroke="#3FAF7D" stroke-width="1.5" marker-end="url(#s1)"/>
+          <defs><marker id="s1" markerWidth="5" markerHeight="4" refX="5" refY="2" orient="auto"><polygon points="0 0,5 2,0 4" fill="#3FAF7D"/></marker></defs>
+          <text x="36" y="66" text-anchor="middle" font-family="DM Mono" font-size="6" fill="#7A8A84">AIR INTAKE</text>
+        </svg>
+        <div class="step-name">Intake</div>
+        <div class="step-desc">Ambient CO₂-rich air is drawn through an external intake louver into the photobioreactor panels.</div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card reveal reveal-delay-1">
+        <div class="step-num">Step 02</div>
+        <svg class="step-icon" viewBox="0 0 72 72" fill="none">
+          <rect x="1" y="1" width="70" height="70" rx="2" stroke="rgba(63,175,125,0.2)" stroke-width="1"/>
+          <rect x="10" y="10" width="52" height="52" rx="2" stroke="#3FAF7D" stroke-width="1.2" fill="rgba(63,175,125,0.06)"/>
+          <line x1="26" y1="10" x2="26" y2="62" stroke="#3FAF7D" stroke-width="0.5" stroke-opacity="0.3"/>
+          <line x1="42" y1="10" x2="42" y2="62" stroke="#3FAF7D" stroke-width="0.5" stroke-opacity="0.3"/>
+          <line x1="10" y1="26" x2="62" y2="26" stroke="#3FAF7D" stroke-width="0.5" stroke-opacity="0.3"/>
+          <line x1="10" y1="42" x2="62" y2="42" stroke="#3FAF7D" stroke-width="0.5" stroke-opacity="0.3"/>
+          <circle cx="22" cy="34" r="3.5" fill="rgba(63,175,125,0.6)"/>
+          <circle cx="36" cy="46" r="3"   fill="rgba(63,175,125,0.5)"/>
+          <circle cx="50" cy="28" r="4"   fill="rgba(63,175,125,0.6)"/>
+          <circle cx="32" cy="20" r="2.5" fill="rgba(63,175,125,0.45)"/>
+          <circle cx="54" cy="50" r="3"   fill="rgba(63,175,125,0.5)"/>
+          <circle cx="18" cy="54" r="2"   fill="rgba(63,175,125,0.4)"/>
+          <text x="36" y="66" text-anchor="middle" font-family="DM Mono" font-size="6" fill="#7A8A84">ALGAE CULTURE</text>
+        </svg>
+        <div class="step-name">Grow</div>
+        <div class="step-desc">Algae fix CO₂ photosynthetically, accumulating biomass. Airlift mixing and sensors maintain optimal conditions.</div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card reveal reveal-delay-2">
+        <div class="step-num">Step 03</div>
+        <svg class="step-icon" viewBox="0 0 72 72" fill="none">
+          <rect x="1" y="1" width="70" height="70" rx="2" stroke="rgba(63,175,125,0.2)" stroke-width="1"/>
+          <!-- centrifuge circle -->
+          <circle cx="36" cy="36" r="20" stroke="#3FAF7D" stroke-width="1.2" fill="rgba(63,175,125,0.05)"/>
+          <circle cx="36" cy="36" r="10" stroke="#3FAF7D" stroke-width="0.8" fill="none"/>
+          <line x1="36" y1="16" x2="36" y2="26" stroke="#3FAF7D" stroke-width="1" stroke-opacity="0.5"/>
+          <line x1="36" y1="46" x2="36" y2="56" stroke="#3FAF7D" stroke-width="1" stroke-opacity="0.5"/>
+          <line x1="16" y1="36" x2="26" y2="36" stroke="#3FAF7D" stroke-width="1" stroke-opacity="0.5"/>
+          <line x1="46" y1="36" x2="56" y2="36" stroke="#3FAF7D" stroke-width="1" stroke-opacity="0.5"/>
+          <text x="36" y="66" text-anchor="middle" font-family="DM Mono" font-size="6" fill="#7A8A84">HARVEST</text>
+        </svg>
+        <div class="step-name">Harvest</div>
+        <div class="step-desc">Algae-rich culture is centrifuged weekly, separating dense biomass from the water stream. Process water is recycled back into the system.</div>
+      </div>
+
+    </div>
+    <div class="steps-row-2">
+
+      <!-- Step 4 -->
+      <div class="step-card reveal">
+        <div class="step-num">Step 04</div>
+        <svg class="step-icon" viewBox="0 0 72 72" fill="none">
+          <rect x="1" y="1" width="70" height="70" rx="2" stroke="rgba(63,175,125,0.2)" stroke-width="1"/>
+          <rect x="14" y="22" width="44" height="30" rx="2" stroke="#3FAF7D" stroke-width="1.5" fill="rgba(63,175,125,0.05)"/>
+          <path d="M12 22 L36 12 L60 22" stroke="#3FAF7D" stroke-width="1.2" fill="rgba(63,175,125,0.08)"/>
+          <circle cx="50" cy="37" r="7" stroke="#3FAF7D" stroke-width="1" fill="none"/>
+          <circle cx="50" cy="37" r="3" stroke="#3FAF7D" stroke-width="0.8" fill="rgba(63,175,125,0.12)"/>
+          <line x1="14" y1="34" x2="58" y2="34" stroke="#3FAF7D" stroke-width="0.5" stroke-opacity="0.3"/>
+          <text x="28" y="32" text-anchor="middle" font-family="DM Mono" font-size="6.5" fill="#3FAF7D">200°C</text>
+          <text x="28" y="44" text-anchor="middle" font-family="DM Mono" font-size="6.5" fill="#3FAF7D">50 Bar</text>
+          <text x="36" y="66" text-anchor="middle" font-family="DM Mono" font-size="6" fill="#7A8A84">HTC ENCLOSURE</text>
+        </svg>
+        <div class="step-name">Convert</div>
+        <div class="step-desc">Biomass enters the compact on-site HTC enclosure. The hydrothermal carbonization unit converts wet algae to hydrochar at 200°C, 50 Bar — no drying needed.</div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step-card reveal reveal-delay-1">
+        <div class="step-num">Step 05</div>
+        <svg class="step-icon" viewBox="0 0 72 72" fill="none">
+          <rect x="1" y="1" width="70" height="70" rx="2" stroke="rgba(63,175,125,0.2)" stroke-width="1"/>
+          <rect x="16" y="18" width="40" height="36" rx="3" stroke="#3FAF7D" stroke-width="1.5" fill="rgba(63,175,125,0.06)"/>
+          <circle cx="36" cy="36" r="10" stroke="#3FAF7D" stroke-width="1.2" fill="none"/>
+          <circle cx="36" cy="36" r="4"  stroke="#3FAF7D" stroke-width="1" fill="rgba(63,175,125,0.2)"/>
+          <line x1="36" y1="26" x2="36" y2="32" stroke="#3FAF7D" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="36" y1="26" x2="39" y2="29" stroke="#3FAF7D" stroke-width="1.5" stroke-linecap="round"/>
+          <rect x="18" y="47" width="36" height="4" rx="1" fill="rgba(63,175,125,0.15)"/>
+          <rect x="18" y="47" width="26" height="4" rx="1" fill="rgba(63,175,125,0.5)"/>
+          <text x="36" y="66" text-anchor="middle" font-family="DM Mono" font-size="6" fill="#7A8A84">HYDROCHAR VAULT</text>
+        </svg>
+        <div class="step-name">Store</div>
+        <div class="step-desc">Hydrochar — a stable, carbon-rich solid — accumulates in the collection vault. Collected quarterly for verification and credit issuance.</div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="step-card reveal reveal-delay-2">
+        <div class="step-num">Step 06</div>
+        <svg class="step-icon" viewBox="0 0 72 72" fill="none">
+          <rect x="1" y="1" width="70" height="70" rx="2" stroke="rgba(63,175,125,0.2)" stroke-width="1"/>
+          <circle cx="36" cy="34" r="18" stroke="#3FAF7D" stroke-width="1.2" fill="rgba(63,175,125,0.05)"/>
+          <path d="M27 34 L33 40 L46 27" stroke="#3FAF7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Stars/shield badge -->
+          <circle cx="54" cy="18" r="8" stroke="#3FAF7D" stroke-width="1" fill="rgba(63,175,125,0.1)"/>
+          <path d="M51 18 L53 20 L57 16" stroke="#3FAF7D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="36" y="66" text-anchor="middle" font-family="DM Mono" font-size="6" fill="#7A8A84">VERIFIED CREDITS</text>
+        </svg>
+        <div class="step-name">Verify</div>
+        <div class="step-desc">Each batch of hydrochar is independently verified. Real-time sensor data — CO₂, air quality, temperature, humidity — provides a full audit trail for carbon credit issuance.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS DIAGRAM -->
+<section id="how-it-works-diagram" style="background:var(--bg2);padding:100px 60px;">
+  <div class="section-inner">
+    <div class="section-tag" data-num="04 —">How It Works</div>
+    <h2>From air to hydrochar,<br>one closed system.</h2>
+    <div class="diagram-container reveal" style="margin-top:60px;">
+      <div class="diagram-header">
+        <span class="diagram-title">0asis — System Schematic</span>
+        <span class="diagram-sub">GFRC Module · 500L Batch · ~30 kg Hydrochar Output</span>
+      </div>
+      <img class="diagram-img" src="how-it-works.png" alt="0asis system schematic showing algae growth system with external air intake louver, mechanical core with slurry concentration centrifuge and filtration press, HTC reactor at 200°C 50 Bar, and solid hydrochar collection vault" />
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIATORS -->
+<section id="differentiators">
+  <div class="section-inner">
+    <div class="section-tag" data-num="05 —">Why 0asis</div>
+    <h2>Built differently,<br>by design.</h2>
+    <div class="diff-grid">
+
+      <div class="diff-card reveal">
+        <svg class="diff-icon" viewBox="0 0 36 36" fill="none">
+          <rect x="2" y="8" width="32" height="20" rx="2" stroke="#3FAF7D" stroke-width="1.5" fill="rgba(63,175,125,0.07)"/>
+          <circle cx="18" cy="18" r="6" stroke="#3FAF7D" stroke-width="1"/>
+          <path d="M4 24 L9 19 L14 22 L20 16 L26 20 L32 14" stroke="#3FAF7D" stroke-width="1" fill="none"/>
+        </svg>
+        <div class="diff-title">Durable carbon storage</div>
+        <div class="diff-body">Hydrochar is stable across centuries to millennia. Unlike tree planting or soil carbon, it cannot be reversed by fire, drought, or land use change. Storage is physical and verifiable.</div>
+      </div>
+
+      <div class="diff-card reveal reveal-delay-1">
+        <svg class="diff-icon" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="14" stroke="#3FAF7D" stroke-width="1.5" fill="rgba(63,175,125,0.07)"/>
+          <path d="M10 18 C10 13, 26 13, 26 18 C26 23, 10 23, 10 18Z" stroke="#3FAF7D" stroke-width="1" fill="none"/>
+          <line x1="18" y1="4" x2="18" y2="32" stroke="#3FAF7D" stroke-width="0.8" stroke-opacity="0.4"/>
+        </svg>
+        <div class="diff-title">Park-first deployment</div>
+        <div class="diff-body">Designed to integrate with existing parks and public spaces — not remote industrial sites. Each unit is modular, low-footprint, and engineered for public environments.</div>
+      </div>
+
+      <div class="diff-card reveal">
+        <svg class="diff-icon" viewBox="0 0 36 36" fill="none">
+          <rect x="4" y="10" width="12" height="16" rx="1" stroke="#3FAF7D" stroke-width="1.5" fill="rgba(63,175,125,0.07)"/>
+          <rect x="20" y="6" width="12" height="20" rx="1" stroke="#3FAF7D" stroke-width="1.5" fill="rgba(63,175,125,0.07)"/>
+          <line x1="16" y1="32" x2="20" y2="32" stroke="#3FAF7D" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="10" y1="32" x2="10" y2="26" stroke="#3FAF7D" stroke-width="1" stroke-opacity="0.4"/>
+          <line x1="26" y1="32" x2="26" y2="26" stroke="#3FAF7D" stroke-width="1" stroke-opacity="0.4"/>
+        </svg>
+        <div class="diff-title">Biologically driven cost</div>
+        <div class="diff-body">Algae are the engine. No exotic chemistry, no massive energy input. Capture cost falls as biology scales — a fundamentally different cost trajectory than Direct Air Capture.</div>
+      </div>
+
+      <div class="diff-card reveal reveal-delay-1">
+        <svg class="diff-icon" viewBox="0 0 36 36" fill="none">
+          <rect x="6" y="6" width="24" height="24" rx="2" stroke="#3FAF7D" stroke-width="1.5" fill="rgba(63,175,125,0.07)"/>
+          <line x1="12" y1="6" x2="12" y2="30" stroke="#3FAF7D" stroke-width="0.5" stroke-opacity="0.3"/>
+          <line x1="18" y1="6" x2="18" y2="30" stroke="#3FAF7D" stroke-width="0.5" stroke-opacity="0.3"/>
+          <line x1="24" y1="6" x2="24" y2="30" stroke="#3FAF7D" stroke-width="0.5" stroke-opacity="0.3"/>
+          <line x1="6" y1="14" x2="30" y2="14" stroke="#3FAF7D" stroke-width="0.5" stroke-opacity="0.3"/>
+          <line x1="6" y1="22" x2="30" y2="22" stroke="#3FAF7D" stroke-width="0.5" stroke-opacity="0.3"/>
+          <circle cx="14" cy="18" r="2" fill="rgba(63,175,125,0.7)"/>
+          <circle cx="22" cy="12" r="2" fill="rgba(63,175,125,0.6)"/>
+          <circle cx="26" cy="24" r="1.5" fill="rgba(63,175,125,0.5)"/>
+        </svg>
+        <div class="diff-title">Real-time, auditable monitoring</div>
+        <div class="diff-body">Integrated sensors track CO₂ concentration, air quality, temperature, and humidity continuously. Every credit is backed by a sensor-verified, time-stamped data record.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 7. VISION -->
+<section id="vision">
+  <div class="section-inner">
+    <div class="section-tag" style="justify-content:center;margin-bottom:40px;" data-num="06 —">The Vision</div>
+    <h2 class="reveal">A city where every<br>park <em>cleans the air.</em></h2>
+    <p class="reveal reveal-delay-1">Imagine urban infrastructure that works for the climate — not against it. Parks that remove the carbon produced by the buildings around them. Public spaces that are measurably good for the planet. A future where carbon removal is as ordinary as a streetlight.</p>
+  </div>
+</section>
+
+<!-- 8. IMPACT -->
+<section id="impact">
+  <div class="section-inner">
+    <div class="section-tag" data-num="07 —">Impact</div>
+    <h2>Numbers that hold up<br>to scrutiny.</h2>
+    <div class="impact-grid">
+      <div class="impact-card reveal">
+        <div class="impact-num">~30 kg</div>
+        <div class="impact-label">Hydrochar per 500L batch</div>
+        <div class="impact-source">Derived from HTC conversion efficiency of algae biomass at 200°C, 50 Bar. Each batch represents net carbon removed and permanently stored.</div>
+      </div>
+      <div class="impact-card reveal reveal-delay-1">
+        <div class="impact-num">50×</div>
+        <div class="impact-label">Higher biomass yield than terrestrial plants</div>
+        <div class="impact-source">Algae produce 50–100× more biomass per unit area than land crops. Source: Chisti, Y. (2007), Biotechnology Advances; peer-reviewed across multiple independent studies.</div>
+      </div>
+      <div class="impact-card reveal reveal-delay-2">
+        <div class="impact-num">1,000<em style="font-size:0.6em;color:var(--green);">yr</em></div>
+        <div class="impact-label">Minimum hydrochar carbon stability</div>
+        <div class="impact-source">Hydrochar produced via HTC is classified as recalcitrant carbon. Mean residence time estimates range from centuries to millennia. Source: Libra et al. (2011), Biofuels.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. BELGRADE FIELD PROOF -->
+<section id="belgrade">
+  <div class="section-inner">
+    <div class="section-tag" data-num="08 —">Field Proof</div>
+    <h2>Belgrade. Where the<br>concept was proven.</h2>
+    <div class="belgrade-layout">
+      <div class="belgrade-left reveal">
+        <p class="belgrade-lead">In 2021, LIQUID3 demonstrated that photobioreactor technology works in a real polluted city — surviving variable temperatures, urban pollution loading, and public deployment conditions in Belgrade, Serbia. That proof of concept established the biological foundation 0ASIS builds on.</p>
+        <div class="belgrade-specs">
+          <div class="belgrade-spec-row">
+            <span class="belgrade-spec-key">Organisation</span>
+            <span class="belgrade-spec-val">LIQUID3</span>
+          </div>
+          <div class="belgrade-spec-row">
+            <span class="belgrade-spec-key">Year</span>
+            <span class="belgrade-spec-val">2021</span>
+          </div>
+          <div class="belgrade-spec-row">
+            <span class="belgrade-spec-key">Location</span>
+            <span class="belgrade-spec-val">Belgrade, Serbia</span>
+          </div>
+          <div class="belgrade-spec-row">
+            <span class="belgrade-spec-key">System type</span>
+            <span class="belgrade-spec-val">Photobioreactor · Public deployment</span>
+          </div>
+          <div class="belgrade-spec-row">
+            <span class="belgrade-spec-key">What it proved</span>
+            <span class="belgrade-spec-val">Biology works in real urban conditions</span>
+          </div>
+          <div class="belgrade-spec-row">
+            <span class="belgrade-spec-key">What it left open</span>
+            <span class="belgrade-spec-val">Permanent carbon storage</span>
+          </div>
+        </div>
+      </div>
+      <div class="belgrade-right reveal reveal-delay-2">
+        <div class="belgrade-finding">
+          <div class="finding-num">F·01</div>
+          <div class="finding-text"><strong>Photobioreactor technology survived real urban conditions</strong> — variable temperatures, pollution loading, and public deployment in Belgrade — confirming the biology transfers from lab to city.</div>
+        </div>
+        <div class="belgrade-finding">
+          <div class="finding-num">F·02</div>
+          <div class="finding-text"><strong>What LIQUID3 left open was the carbon loop.</strong> Harvested biomass decomposed and released its carbon back — the system cleaned the air but didn't lock anything away.</div>
+        </div>
+        <div class="belgrade-finding">
+          <div class="finding-num">F·03</div>
+          <div class="finding-text"><strong>0ASIS closes that loop.</strong> By adding on-site hydrothermal carbonization, harvested biomass is converted into permanent hydrochar rather than released — transforming a working air quality system into a verified carbon removal system.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CTA -->
+<section id="cta">
+  <div class="cta-inner">
+    <div class="cta-left reveal">
+      <div class="section-tag" data-num="09 —">Partner with us</div>
+      <h2>Let's close the loop<br>together.</h2>
+      <p>We are seeking founding partners — cities, parks, and urban infrastructure operators — to co-deploy the first commercial 0asis installations. If you represent an organization with urban public space and a climate mandate, we want to hear from you.</p>
+    </div>
+    <form class="cta-right reveal reveal-delay-2" action="https://formspree.io/f/xdabkobr" method="POST">
+      <div class="cta-field">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Your name" required>
+      </div>
+      <div class="cta-field">
+        <label>Organization</label>
+        <input type="text" name="organization" placeholder="Company or municipality">
+      </div>
+      <div class="cta-field">
+        <label>Role</label>
+        <select name="role">
+          <option value="" disabled selected>Select your role</option>
+          <option>City government / municipality</option>
+          <option>Parks authority or urban planner</option>
+          <option>AI company / tech organization</option>
+          <option>Climate investor</option>
+          <option>Academic or research institution</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="cta-field">
+        <label>Message</label>
+        <textarea name="message" placeholder="Tell us about your site, goals, or questions"></textarea>
+      </div>
+      <button class="cta-submit" type="submit">Send enquiry</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><span>0</span>asis</div>
+  <div class="footer-copy">Algae Sensing Intelligence System · Net Zero Infrastructure · © 2025</div>
+</footer>
+
+<script>
+// ── SCROLL REVEAL ──────────────────────────────────────────────────────
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
 </html>
