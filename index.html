@@ -483,11 +483,11 @@
     line-height: 1.3;
   }
   .impact-source {
-    font-family: var(--mono);
+    font-family: var(--sans);
     font-size: 11px;
-    color: var(--dim);
-    letter-spacing: 0.04em;
-    line-height: 1.55;
+    color: rgba(122,138,132,0.65);
+    line-height: 1.5;
+    margin-top: 2px;
   }
 
   /* ── BELGRADE ────────────────────────── */
@@ -757,6 +757,64 @@
   .footer-logo span { color: var(--green); }
   .footer-copy { font-size: 12px; color: var(--dim); font-family: var(--mono); letter-spacing: 0.04em; }
 
+  /* ── HAMBURGER + MOBILE MENU ──────────── */
+  .nav-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 200;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 22px;
+    height: 1.5px;
+    background: var(--text);
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+  .nav-mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(11,15,14,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 12px 0 20px;
+    z-index: 150;
+  }
+  .nav-mobile-menu.open { display: flex; }
+  .nav-mobile-link {
+    color: var(--dim);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 14px 24px;
+    transition: color 0.2s;
+  }
+  .nav-mobile-link:hover { color: var(--text); }
+  .nav-mobile-cta {
+    font-family: var(--mono);
+    color: var(--green) !important;
+    margin: 8px 24px 0;
+    padding: 10px 20px;
+    border: 1px solid rgba(63,175,125,0.4);
+    border-radius: 2px;
+    text-align: center;
+  }
+
   /* ── MOBILE RESPONSIVENESS ────────────── */
   @media (max-width: 768px) {
     html, body { overflow-x: hidden; }
@@ -768,6 +826,9 @@
     }
     .nav-links {
       display: none;
+    }
+    .nav-hamburger {
+      display: flex;
     }
 
     #hero { padding: 100px 20px 60px; }
@@ -879,10 +940,21 @@
   <a href="#" class="nav-logo"><span>0</span>asis</a>
   <ul class="nav-links">
     <li><a href="#solution">System</a></li>
+    <li><a href="#how-it-works-diagram">Diagram</a></li>
     <li><a href="#differentiators">Why 0asis</a></li>
     <li><a href="#belgrade">Field Proof</a></li>
     <li><a href="#cta" class="nav-cta">Partner with us</a></li>
   </ul>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-mobile-menu" id="navMobileMenu">
+    <a href="#solution" class="nav-mobile-link">System</a>
+    <a href="#how-it-works-diagram" class="nav-mobile-link">Diagram</a>
+    <a href="#differentiators" class="nav-mobile-link">Why 0asis</a>
+    <a href="#belgrade" class="nav-mobile-link">Field Proof</a>
+    <a href="#cta" class="nav-mobile-link nav-mobile-cta">Partner with us</a>
+  </div>
 </nav>
 
 <!-- 2. HERO -->
@@ -892,7 +964,7 @@
   <div class="hero-content">
     <div class="hero-tag">Algae Sensing Intelligence System</div>
     <h1>The carbon loop,<br>closed.</h1>
-    <p class="hero-sub">Algae-powered photobioreactor units deployed in urban parks and public spaces — capturing CO₂ and converting it to hydrochar. Durable, measurable, urban.</p>
+    <p class="hero-sub">Photobioreactors for urban parks that capture CO₂ and convert it into hydrochar. Measurable. Verifiable. Built for cities.</p>
     <div class="hero-ctas">
       <a href="#solution" class="btn-primary">See how it works</a>
       <a href="#cta" class="btn-secondary">Partner with us</a>
@@ -905,15 +977,15 @@
   <div class="stats-row">
     <div class="stat-block reveal">
       <div class="stat-block-num">~50<em>×</em></div>
-      <div class="stat-block-label"><strong>More efficient</strong> than terrestrial plants per unit area — using the same sunlight and CO₂</div>
+      <div class="stat-block-label"><strong>More biomass per unit area</strong> than land crops, using the same sunlight and CO₂</div>
     </div>
     <div class="stat-block reveal reveal-delay-1">
       <div class="stat-block-num">100<em>yr+</em></div>
-      <div class="stat-block-label"><strong>Carbon stable</strong> as hydrochar — centuries to millennia versus decades for tree-based storage</div>
+      <div class="stat-block-label"><strong>Carbon stable</strong> as hydrochar, with decades-to-centuries storage versus years for tree-based approaches</div>
     </div>
     <div class="stat-block reveal reveal-delay-2">
       <div class="stat-block-num">75<em>%</em></div>
-      <div class="stat-block-label"><strong>Of all CO₂ emissions</strong> originate from cities — where 0asis units are designed to deploy</div>
+      <div class="stat-block-label"><strong>Of all CO₂ emissions</strong> originate from cities, where 0asis units are designed to deploy</div>
     </div>
   </div>
 </section>
@@ -926,12 +998,12 @@
     <div class="problem-grid">
       <div class="reveal">
         <div class="problem-stat">
-          <div class="stat-num">~<em>0</em></div>
-          <div class="stat-desc">Carbon removal infrastructure currently deployed inside city boundaries. Existing solutions are industrial, remote, or expensive.</div>
+          <div class="stat-num">&lt;<em>1%</em></div>
+          <div class="stat-desc">Less than 1% of cities have any verified carbon removal infrastructure deployed at urban scale.</div>
         </div>
         <div class="problem-stat">
           <div class="stat-num">$<em>1k+</em></div>
-          <div class="stat-desc">Per tonne for Direct Air Capture — too expensive to deploy at meaningful urban scale, and requires dedicated remote facilities.</div>
+          <div class="stat-desc">Per tonne for Direct Air Capture. Too expensive for meaningful urban deployment, and requires dedicated remote facilities.</div>
         </div>
       </div>
       <div class="problem-points reveal reveal-delay-2">
@@ -941,15 +1013,15 @@
         </div>
         <div class="problem-point">
           <div class="point-dot"></div>
-          <div class="point-text">Tree planting stores carbon temporarily and reversibly — forests burn, die, and release what they captured.</div>
+          <div class="point-text">Tree planting stores carbon temporarily and reversibly. Forests burn, die, and release what they captured.</div>
         </div>
         <div class="problem-point">
           <div class="point-dot"></div>
-          <div class="point-text">Urban parks and public spaces represent untapped infrastructure for biological carbon capture — visited by millions daily.</div>
+          <div class="point-text">Urban parks and public spaces represent untapped infrastructure for biological carbon capture, visited by millions daily.</div>
         </div>
         <div class="problem-point">
           <div class="point-dot"></div>
-          <div class="point-text">Carbon credit buyers — especially AI companies with massive compute emissions — need measurable, durable removal they can verify.</div>
+          <div class="point-text">Carbon credit buyers, especially AI companies with massive compute emissions, need measurable, durable removal they can verify.</div>
         </div>
       </div>
     </div>
@@ -960,7 +1032,10 @@
 <section id="solution">
   <div class="section-inner">
     <div class="section-tag" data-num="03 —">The Solution</div>
-    <h2>One closed loop,<br>six steps.</h2>
+    <h2>Six steps. 
+One closed loop.
+
+</h2>
     <div class="steps-grid">
 
       <!-- Step 1 -->
@@ -1041,7 +1116,7 @@
           <text x="36" y="66" text-anchor="middle" font-family="DM Mono" font-size="6" fill="#7A8A84">HTC ENCLOSURE</text>
         </svg>
         <div class="step-name">Convert</div>
-        <div class="step-desc">Biomass enters the compact on-site HTC enclosure. The hydrothermal carbonization unit converts wet algae to hydrochar at 200°C, 50 Bar — no drying needed.</div>
+        <div class="step-desc">Biomass enters the compact on-site HTC enclosure. The hydrothermal carbonization unit converts wet algae to hydrochar at 200°C, 50 Bar. No drying needed.</div>
       </div>
 
       <!-- Step 5 -->
@@ -1059,7 +1134,7 @@
           <text x="36" y="66" text-anchor="middle" font-family="DM Mono" font-size="6" fill="#7A8A84">HYDROCHAR VAULT</text>
         </svg>
         <div class="step-name">Store</div>
-        <div class="step-desc">Hydrochar — a stable, carbon-rich solid — accumulates in the collection vault. Collected quarterly for verification and credit issuance.</div>
+        <div class="step-desc">Hydrochar, a stable carbon-rich solid, accumulates in the collection vault. Collected quarterly for verification and credit issuance.</div>
       </div>
 
       <!-- Step 6 -->
@@ -1075,7 +1150,7 @@
           <text x="36" y="66" text-anchor="middle" font-family="DM Mono" font-size="6" fill="#7A8A84">VERIFIED CREDITS</text>
         </svg>
         <div class="step-name">Verify</div>
-        <div class="step-desc">Each batch of hydrochar is independently verified. Real-time sensor data — CO₂, air quality, temperature, humidity — provides a full audit trail for carbon credit issuance.</div>
+        <div class="step-desc">Each batch of hydrochar is independently verified. Real-time sensor data (CO₂, air quality, temperature, humidity) provides a full audit trail for carbon credit issuance.</div>
       </div>
 
     </div>
@@ -1111,7 +1186,7 @@
           <path d="M4 24 L9 19 L14 22 L20 16 L26 20 L32 14" stroke="#3FAF7D" stroke-width="1" fill="none"/>
         </svg>
         <div class="diff-title">Durable carbon storage</div>
-        <div class="diff-body">Hydrochar is stable across centuries to millennia. Unlike tree planting or soil carbon, it cannot be reversed by fire, drought, or land use change. Storage is physical and verifiable.</div>
+        <div class="diff-body">Hydrochar is stable across decades to centuries. Unlike tree planting or soil carbon, it cannot be reversed by fire, drought, or land use change. Storage is physical and verifiable.</div>
       </div>
 
       <div class="diff-card reveal reveal-delay-1">
@@ -1121,7 +1196,7 @@
           <line x1="18" y1="4" x2="18" y2="32" stroke="#3FAF7D" stroke-width="0.8" stroke-opacity="0.4"/>
         </svg>
         <div class="diff-title">Park-first deployment</div>
-        <div class="diff-body">Designed to integrate with existing parks and public spaces — not remote industrial sites. Each unit is modular, low-footprint, and engineered for public environments.</div>
+        <div class="diff-body">Designed to integrate with existing parks and public spaces, not remote industrial sites. Each unit is modular, low-footprint, and engineered for public environments.</div>
       </div>
 
       <div class="diff-card reveal">
@@ -1133,7 +1208,7 @@
           <line x1="26" y1="32" x2="26" y2="26" stroke="#3FAF7D" stroke-width="1" stroke-opacity="0.4"/>
         </svg>
         <div class="diff-title">Biologically driven cost</div>
-        <div class="diff-body">Algae are the engine. No exotic chemistry, no massive energy input. Capture cost falls as biology scales — a fundamentally different cost trajectory than Direct Air Capture.</div>
+        <div class="diff-body">Algae are the engine. No exotic chemistry, no massive energy input. Capture cost falls as biology scales, a fundamentally different cost trajectory than Direct Air Capture.</div>
       </div>
 
       <div class="diff-card reveal reveal-delay-1">
@@ -1161,7 +1236,7 @@
   <div class="section-inner">
     <div class="section-tag" style="justify-content:center;margin-bottom:40px;" data-num="06 —">The Vision</div>
     <h2 class="reveal">A city where every<br>park <em>cleans the air.</em></h2>
-    <p class="reveal reveal-delay-1">Imagine urban infrastructure that works for the climate — not against it. Parks that remove the carbon produced by the buildings around them. Public spaces that are measurably good for the planet. A future where carbon removal is as ordinary as a streetlight.</p>
+    <p class="reveal reveal-delay-1">Imagine urban infrastructure that works for the climate, not against it. Parks that remove the carbon produced by the buildings around them. Public spaces that are measurably good for the planet. A future where carbon removal is as ordinary as a streetlight.</p>
   </div>
 </section>
 
@@ -1172,19 +1247,19 @@
     <h2>Numbers that hold up<br>to scrutiny.</h2>
     <div class="impact-grid">
       <div class="impact-card reveal">
-        <div class="impact-num">~30 kg</div>
+        <div class="impact-num">~30kg</div>
         <div class="impact-label">Hydrochar per 500L batch</div>
-        <div class="impact-source">Derived from HTC conversion efficiency of algae biomass at 200°C, 50 Bar. Each batch represents net carbon removed and permanently stored.</div>
+        <div class="impact-source">Derived from HTC conversion efficiency of algae biomass at 200°C, 50 Bar. Each batch represents net carbon removed and locked away long-term.</div>
       </div>
       <div class="impact-card reveal reveal-delay-1">
         <div class="impact-num">50×</div>
-        <div class="impact-label">Higher biomass yield than terrestrial plants</div>
-        <div class="impact-source">Algae produce 50–100× more biomass per unit area than land crops. Source: Chisti, Y. (2007), Biotechnology Advances; peer-reviewed across multiple independent studies.</div>
+        <div class="impact-label">More biomass per unit area than land crops</div>
+        <div class="impact-source">Source: Chisti, Y. (2007), Biotechnology Advances. Peer-reviewed across multiple independent studies.</div>
       </div>
       <div class="impact-card reveal reveal-delay-2">
-        <div class="impact-num">1,000<em style="font-size:0.6em;color:var(--green);">yr</em></div>
-        <div class="impact-label">Minimum hydrochar carbon stability</div>
-        <div class="impact-source">Hydrochar produced via HTC is classified as recalcitrant carbon. Mean residence time estimates range from centuries to millennia. Source: Libra et al. (2011), Biofuels.</div>
+        <div class="impact-num"><em style="color:var(--green);">100–300yr</em></div>
+        <div class="impact-label">Estimated hydrochar carbon stability</div>
+        <div class="impact-source">Hydrochar produced via HTC is classified as recalcitrant carbon. Mean residence time estimates range from 100 to 300 years. Source: Libra et al. (2011).</div>
       </div>
     </div>
   </div>
@@ -1194,10 +1269,10 @@
 <section id="belgrade">
   <div class="section-inner">
     <div class="section-tag" data-num="08 —">Field Proof</div>
-    <h2>Belgrade. Where the<br>concept was proven.</h2>
+    <h2>Belgrade: Where the<br>concept was proven.</h2>
     <div class="belgrade-layout">
       <div class="belgrade-left reveal">
-        <p class="belgrade-lead">In 2021, LIQUID3 demonstrated that photobioreactor technology works in a real polluted city — surviving variable temperatures, urban pollution loading, and public deployment conditions in Belgrade, Serbia. That proof of concept established the biological foundation 0ASIS builds on.</p>
+        <p class="belgrade-lead">In 2021, LIQUID3 demonstrated that photobioreactor technology works in a real polluted city, surviving variable temperatures, urban pollution loading, and public deployment conditions in Belgrade, Serbia. That proof of concept established the biological foundation 0ASIS builds on.</p>
         <div class="belgrade-specs">
           <div class="belgrade-spec-row">
             <span class="belgrade-spec-key">Organisation</span>
@@ -1221,14 +1296,14 @@
           </div>
           <div class="belgrade-spec-row">
             <span class="belgrade-spec-key">What it left open</span>
-            <span class="belgrade-spec-val">Permanent carbon storage</span>
+            <span class="belgrade-spec-val">Long-term carbon storage</span>
           </div>
         </div>
       </div>
       <div class="belgrade-right reveal reveal-delay-2">
         <div class="belgrade-finding">
           <div class="finding-num">F·01</div>
-          <div class="finding-text"><strong>Photobioreactor technology survived real urban conditions</strong> — variable temperatures, pollution loading, and public deployment in Belgrade — confirming the biology transfers from lab to city.</div>
+          <div class="finding-text"><strong>Photobioreactor technology survived real urban conditions.</strong> Variable temperatures, pollution loading, and public deployment in Belgrade confirmed the biology transfers from lab to city.</div>
         </div>
         <div class="belgrade-finding">
           <div class="finding-num">F·02</div>
@@ -1236,7 +1311,7 @@
         </div>
         <div class="belgrade-finding">
           <div class="finding-num">F·03</div>
-          <div class="finding-text"><strong>0ASIS closes that loop.</strong> By adding on-site hydrothermal carbonization, harvested biomass is converted into permanent hydrochar rather than released — transforming a working air quality system into a verified carbon removal system.</div>
+          <div class="finding-text"><strong>0ASIS closes that loop.</strong> By adding on-site hydrothermal carbonization, harvested biomass is converted into century-scale hydrochar rather than released, transforming a working air quality system into a verified carbon removal system.</div>
         </div>
       </div>
     </div>
@@ -1249,7 +1324,7 @@
     <div class="cta-left reveal">
       <div class="section-tag" data-num="09 —">Partner with us</div>
       <h2>Let's close the loop<br>together.</h2>
-      <p>We are seeking founding partners — cities, parks, and urban infrastructure operators — to co-deploy the first commercial 0asis installations. If you represent an organization with urban public space and a climate mandate, we want to hear from you.</p>
+      <p>We are seeking founding partners: cities, AI companies, data centers, and researchers working on urban carbon capture. If you want to help close the carbon loop in a real city, we want to hear from you.</p>
     </div>
     <form class="cta-right reveal reveal-delay-2" action="https://formspree.io/f/xdabkobr" method="POST">
       <div class="cta-field">
@@ -1284,10 +1359,24 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo"><span>0</span>asis</div>
-  <div class="footer-copy">Algae Sensing Intelligence System · Net Zero Infrastructure · © 2025</div>
+  <div class="footer-copy">Algae Sensing Intelligence System · Net Zero Infrastructure · 0ASIS 2026</div>
 </footer>
 
 <script>
+// ── MOBILE NAV ────────────────────────────────────────────────────────
+const hamburger = document.getElementById('navHamburger');
+const mobileMenu = document.getElementById('navMobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+mobileMenu.querySelectorAll('.nav-mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  });
+});
+
 // ── SCROLL REVEAL ──────────────────────────────────────────────────────
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
